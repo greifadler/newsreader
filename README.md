@@ -5,29 +5,29 @@
 
 <table>
   <tr>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="demo_images/main_screen.png" alt="Latest News" width="200"><br>
       <em>Latest News Screen with Infinite Loading</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="demo_images/details_screen.png" alt="Article Details" width="200"><br>
       <em>Article Details Screen</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="demo_images/myprofile_screen.png" alt="Profile/Login/Logout" width="200"><br>
       <em>Profile / Logout</em>
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="demo_images/favourites_screen.png" alt="Liked Articles" width="200"><br>
       <em>Liked Articles Screen</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="demo_images/category_sports_screen.png" alt="Category Browse" width="200"><br>
       <em>Category Browse Screen</em>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="demo_images/login_screen.png" alt="Category Browse" width="200"><br>
       <em>Login Screen</em>
     </td>
