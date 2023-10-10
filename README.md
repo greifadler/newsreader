@@ -29,8 +29,9 @@
       <em>Category Browse Screen</em>
     </td>
     <td align="center">
-      <!-- You can leave this cell empty or add another image or text if needed -->
-    </td>
+      <img src="demo_images/category_sports_screen.png" alt="Category Browse"><br>
+      <em>Category Browse Screen</em>
+</td>
   </tr>
 </table>
 
