@@ -38,8 +38,6 @@
 
 ## Bonus Features
 
-Hello! Fabian Greimel (7210009) here. Welcome to my extra-feature list:
-
 - Generated API-access files using the gradle plugin `openApi` with a swagger file.
 - Incorporated the latest Material You Design.
 - Implemented the `AccountManager` (previous SharedPrefs approach marked as deprecated).
