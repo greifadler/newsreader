@@ -1,39 +1,38 @@
 # The Reader
 
 "The Reader" is an Android app developed using Jetpack Compose and Kotlin. It provides users with a seamless experience to read news articles by connecting to an API. The app offers functionalities like logging in, liking/unliking articles, and more.
-
 ## Screenshots
 
 <table>
   <tr>
     <td align="center">
-      <img src="demo_images/main_screen.png" alt="Latest News"><br>
+      <img src="demo_images/main_screen.png" alt="Latest News" width="200"><br>
       <em>Latest News Screen with Infinite Loading</em>
     </td>
     <td align="center">
-      <img src="demo_images/details_screen.png" alt="Article Details"><br>
+      <img src="demo_images/details_screen.png" alt="Article Details" width="200"><br>
       <em>Article Details Screen</em>
     </td>
     <td align="center">
-      <img src="demo_images/myprofile_screen.png" alt="Profile/Login/Logout"><br>
+      <img src="demo_images/my_profile_screen.png" alt="Profile/Login/Logout" width="200"><br>
       <em>Profile/Login/Logout Screen</em>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="demo_images/favourites_screen.png" alt="Liked Articles"><br>
+      <img src="demo_images/favourites_screen.png" alt="Liked Articles" width="200"><br>
       <em>Liked Articles Screen</em>
     </td>
     <td align="center">
-      <img src="demo_images/category_sports_screen.png" alt="Category Browse"><br>
+      <img src="demo_images/category_sports_screen.png" alt="Category Browse" width="200"><br>
       <em>Category Browse Screen</em>
     </td>
     <td align="center">
-      <img src="demo_images/category_sports_screen.png" alt="Category Browse"><br>
-      <em>Category Browse Screen</em>
-</td>
+      <!-- You can leave this cell empty or add another image or text if needed -->
+    </td>
   </tr>
 </table>
+
 
 
 ## Bonus Features
