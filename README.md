@@ -4,20 +4,36 @@
 
 ## Screenshots
 
-![Latest News](demo_images/main_screen.png)
-_Latest News Screen with Infinite Loading_
+<table>
+  <tr>
+    <td align="center">
+      <img src="demo_images/main_screen.png" alt="Latest News"><br>
+      <em>Latest News Screen with Infinite Loading</em>
+    </td>
+    <td align="center">
+      <img src="demo_images/details_screen.png" alt="Article Details"><br>
+      <em>Article Details Screen</em>
+    </td>
+    <td align="center">
+      <img src="demo_images/my_profile_screen.png" alt="Profile/Login/Logout"><br>
+      <em>Profile/Login/Logout Screen</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="demo_images/favourites_screen.png" alt="Liked Articles"><br>
+      <em>Liked Articles Screen</em>
+    </td>
+    <td align="center">
+      <img src="demo_images/category_sports_screen.png" alt="Category Browse"><br>
+      <em>Category Browse Screen</em>
+    </td>
+    <td align="center">
+      <!-- You can leave this cell empty or add another image or text if needed -->
+    </td>
+  </tr>
+</table>
 
-![Article Details](demo_images/details_screen.png)
-_Article Details Screen_
-
-![Login/Logout](demo_images/my_profile_screen.png)
-_Profile/Login/Logout Screen_
-
-![Liked Articles](demo_images/favourites_screen.png)
-_Liked Articles Screen_
-
-![Category Browse](demo_images/category_sports_screen.png)
-_Category Browse Screen_
 
 ## Bonus Features
 
