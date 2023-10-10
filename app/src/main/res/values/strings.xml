@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">The Reader</string>
+    <string name="title_activity_reader" translatable="false">ReaderActivity</string>
+
+    <string name="home">Home</string>
+    <string name="favourites">Favorites</string>
+    <string name="account">Account</string>
+
+    <string name="home_headline">The Reader</string>
+    <string name="account_headline">My Profile</string>
+    <string name="fav_headline">My Favorites</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="no_articles_found">No articles found</string>
+    <string name="no_liked_articles">No Liked Articles</string>
+    <string name="cat_headline">Your Category</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="related_hl">Related: </string>
+    <string name="full_article_desc">View full article on Website</string>
+    <string name="account_type" translatable="false">nl.greimel.fabian</string>
+    <string name="account_name" translatable="false">User Account</string>
+    <string name="key_api_user" translatable="false">api_username</string>
+    <string name="hide_pw">Hide password</string>
+    <string name="show_pw">Show password</string>
+    <string name="user_icon">User Icon</string>
+    <string name="logged_in_anonym">Logged in</string>
+    <string name="logged_in_personal">Logged in as %s</string>
+    <string name="logout">Logout</string>
+    <string name="msg_login_success">Successfully logged in!</string>
+    <string name="back">Back</string>
+    <string name="share_type" translatable="false">text/plain</string>
+    <string name="share">Share</string>
+    <string name="liked">Liked</string>
+    <string name="not_liked">Not Liked</string>
+    <string name="no_title">No title</string>
+    <string name="no_summary">No summary</string>
+    <string name="original_date_format" translatable="false">yyyy-MM-dd\'T\'HH:mm:ss</string>
+    <string name="desired_date_format" translatable="false">d. MMMM yyyy, HH:mm</string>
+    <string name="categories">"Categories: "</string>
+    <string name="published_date">Published on: %s</string>
+</resources>

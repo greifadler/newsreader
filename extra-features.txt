@@ -1,0 +1,39 @@
+Hello!
+
+Welcome to my (Fabian Greimel, 7210009) extra-feature list of my Newsreader App :)
+
+-At first i used the gradle plugin openApi to generate my API-Access files by a swagger file
+-I implemented the new Material You Design - kinda sick :)
+-After kinda struggling i managed to use AccountManager, i still left the old SharedPrefs approach, but marked it as deprecated
+-I used the deprecated Feature to mark Code i wrote 1 week ago as deprecated :)
+-I show all the information provided by the api on my details page - (timestamp is readable, related articles are a link that is clickable, categories are badges)
+-you can click on the category badges at the details page - to get to new feed page, only with this category :)
+-I localized the app for german/AT
+-I added the share feature at the details page
+-I added some animations - they are kinda easy to implement, liked it
+-Yeah, about the home widget ... i tried it for several hours, but it's not accessing my viewmodel, i let the code there, but sadly its not working
+-I created a nice icon & splash screen (thanks to ai ;) )
+-I hope i did a clean architecture, I tried my best, but if you have some improvements for our ANNO Amsterdam project app, i would love to implement them
+    -to this, i didn't add a Repo/Service layer, because for the size of the app i though is was more of boilerplate / to much useless code
+
+find some other features:
+-custom font - robot slab implemented
+-use of inheritance with an BasicViewModel
+
+
+
+how does the openApi generator gradle plugin work?
+
+https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin
+
+openApiGenerate {
+    generatorName.set("kotlin")
+    inputSpec.set("$projectDir/../swagger/api.yaml")
+    outputDir.set("$projectDir/../modules/api")
+    apiPackage.set("nl.greimel.fabian.api")
+    modelPackage.set("nl.greimel.fabian.model"
+}
+
+run ./gradlew oAGenerate --> to generate the files
+--> for this project i adapted it, to optionally add an api-key & I renamed the models, for a better understanding
+    (you could set an extra layer between, but for this scope i thought it was to much, especially with the knowledge that the api won't change anymore)

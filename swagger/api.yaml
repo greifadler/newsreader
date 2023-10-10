@@ -1,0 +1,290 @@
+swagger: "2.0"
+info:
+  title: Newsreader Backend API
+  version: 1.0.0
+basePath: /api  # Base URL
+schemes:
+  - https
+
+securityDefinitions:
+  x-authtoken:
+    type: apiKey
+    in: header
+    name: x-authtoken
+    description: Authentication token header
+
+security:
+  - x-authtoken: []
+
+paths:
+  /Feeds:
+    get:
+      summary: Get a list of all news feeds
+      description: Returns a list of all news feeds. Every news article comes from exactly one feed.
+      parameters: []
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                Id:
+                  type: integer
+                Name:
+                  type: string
+  /Articles:
+    get:
+      summary: Get a list of articles
+      description: Returns a list of articles, starting with the newest article in the database that fits the specified arguments. Also returns the Id of the next article, which can be used for incremental loading.
+      parameters:
+        - name: count
+          in: query
+          description: The (max) number of results to return
+          type: integer
+        - name: feed
+          in: query
+          description: Use this to get only articles from the specified feed Id.
+          type: integer
+        - name: feeds
+          in: query
+          description: Comma-separated list of feed ids; use to filter articles.
+          type: string
+        - name: category
+          in: query
+          description: Use this to get only articles with specified category Id.
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              Results:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    Id:
+                      type: integer
+                    Feed:
+                      type: integer
+                    Title:
+                      type: string
+                    Summary:
+                      type: string
+                    PublishDate:
+                      type: string
+                    Image:
+                      type: string
+                    Url:
+                      type: string
+                    Related:
+                      type: array
+                      items:
+                        type: string
+                    Categories:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          Id:
+                            type: integer
+                          Name:
+                            type: string
+                    IsLiked:
+                      type: boolean
+              NextId:
+                type: integer
+  /Articles/{id}:
+    get:
+      summary: Get a list of articles starting from a specific article Id
+      description: Returns a list of articles, starting with the article with the specified Id. Also returns the Id of the next article, which can be used for incremental loading.
+      parameters:
+        - name: id
+          in: path
+          description: The article Id to start from
+          required: true
+          type: integer
+        - name: count
+          in: query
+          description: The (max) number of results to return
+          type: integer
+        - name: feed
+          in: query
+          description: Use this to get only articles from the specified feed Id.
+          type: integer
+        - name: feeds
+          in: query
+          description: Comma-separated list of feed ids; use to filter articles.
+          type: string
+        - name: category
+          in: query
+          description: Use this to get only articles with specified category Id.
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              Results:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    Id:
+                      type: integer
+                    Feed:
+                      type: integer
+                    Title:
+                      type: string
+                    Summary:
+                      type: string
+                    PublishDate:
+                      type: string
+                    Image:
+                      type: string
+                    Url:
+                      type: string
+                    Related:
+                      type: array
+                      items:
+                        type: string
+                    Categories:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          Id:
+                            type: integer
+                          Name:
+                            type: string
+                    IsLiked:
+                      type: boolean
+              NextId:
+                type: integer
+  /Articles/liked:
+    get:
+      summary: Get a list of articles liked by the logged-in user
+      description: Returns a list of articles that the logged-in user has liked.
+      parameters: []
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              Results:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    Id:
+                      type: integer
+                    Feed:
+                      type: integer
+                    Title:
+                      type: string
+                    Summary:
+                      type: string
+                    PublishDate:
+                      type: string
+                    Image:
+                      type: string
+                    Url:
+                      type: string
+                    Related:
+                      type: array
+                      items:
+                        type: string
+                    Categories:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          Id:
+                            type: integer
+                          Name:
+                            type: string
+                    IsLiked:
+                      type: boolean
+              NextId:
+                type: integer
+  /Articles/{id}/like:
+    put:
+      summary: Like an article
+      description: Marks the specified article as liked by the logged-in user.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: ID of the article to be liked.
+          type: integer
+      responses:
+        204:
+          description: No content
+
+    delete:
+      summary: Remove like from an article
+      description: Marks the specified article as no longer liked by the logged-in user.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: ID of the article from which the like is to be removed.
+          type: integer
+      responses:
+        204:
+          description: No content
+  /Users/register:
+    post:
+      summary: Register a new user
+      description: Creates a new user account, if the UserName is not already in use.
+      parameters:
+        - name: body
+          in: body
+          required: true
+          description: The request payload for user registration
+          schema:
+            type: object
+            properties:
+              UserName:
+                type: string
+              Password:
+                type: string
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              Success:
+                type: boolean
+              Message:
+                type: string
+  /Users/login:
+    post:
+      summary: Log in as a user
+      description: Logs a user in and returns an auth token, if the specified username and password are correct.
+      parameters:
+        - name: body
+          in: body
+          required: true
+          description: The request payload for user login
+          schema:
+            type: object
+            properties:
+              UserName:
+                type: string
+              Password:
+                type: string
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: object
+            properties:
+              AuthToken:
+                type: string

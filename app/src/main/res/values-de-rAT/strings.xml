@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Der Leser</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favoriten</string>
+    <string name="account">Konto</string>
+    <string name="home_headline">Der Leser</string>
+    <string name="account_headline">Mein Profil</string>
+    <string name="fav_headline">Meine Favoriten</string>
+    <string name="refresh">Neu Laden</string>
+    <string name="no_articles_found">Keine Artikel gefunden</string>
+    <string name="no_liked_articles">Keine Artikel geliked</string>
+    <string name="cat_headline">Deine Kategorie</string>
+    <string name="password">Passwort</string>
+    <string name="username">Username</string>
+    <string name="login">Anmelden</string>
+    <string name="register">Registrieren</string>
+    <string name="related_hl">"Empfohlen: "</string>
+    <string name="full_article_desc">Ganzen Artikel lesen</string>
+    <string name="hide_pw">Passwort ausblenden</string>
+    <string name="show_pw">Passwort zeigen</string>
+    <string name="user_icon">Benutzerbild</string>
+    <string name="logged_in_anonym">Eingelogt</string>
+    <string name="logged_in_personal">Eingelogt als %s</string>
+    <string name="logout">Ausloggen</string>
+    <string name="msg_login_success">"Erfolgreich eingeloggt! "</string>
+    <string name="back">Zurück</string>
+    <string name="share">Teilen</string>
+    <string name="liked">Geliked</string>
+    <string name="not_liked">Nicht geliked</string>
+    <string name="no_title">Kein Titel</string>
+    <string name="no_summary">Keine Zusammenfasssung</string>
+    <string name="categories">"Kategorien: "</string>
+    <string name="published_date">Veröffentlicht am: %s</string>
+</resources>
