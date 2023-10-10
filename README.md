@@ -15,7 +15,7 @@
     </td>
     <td align="center">
       <img src="demo_images/myprofile_screen.png" alt="Profile/Login/Logout" width="200"><br>
-      <em>Profile/Login/Logout Screen</em>
+      <em>Profile / Logout</em>
     </td>
   </tr>
   <tr>
@@ -28,7 +28,8 @@
       <em>Category Browse Screen</em>
     </td>
     <td align="center">
-      <!-- You can leave this cell empty or add another image or text if needed -->
+      <img src="demo_images/login_screen.png" alt="Category Browse" width="200"><br>
+      <em>Login Screen</em>
     </td>
   </tr>
 </table>
