@@ -15,7 +15,7 @@
       <em>Article Details Screen</em>
     </td>
     <td align="center">
-      <img src="demo_images/my_profile_screen.png" alt="Profile/Login/Logout"><br>
+      <img src="demo_images/myprofile_screen.png" alt="Profile/Login/Logout"><br>
       <em>Profile/Login/Logout Screen</em>
     </td>
   </tr>
